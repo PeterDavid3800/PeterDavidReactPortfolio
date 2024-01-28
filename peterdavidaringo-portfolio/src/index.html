@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>BBIT Student</p>
+            <h1>Hi, I'm<span></span> Peter David Aringo</span><br> from Kenya</h1>
+        </div>
+    </div>
+   </div> 
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1>About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac metus vel ligula condimentum dapibus. Integer convallis dolor in libero varius, sit amet ultrices nisl rhoncus. Vivamus euismod, elit vel convallis imperdiet, ipsum justo scelerisque libero, vel pharetra est elit nec nisl. Fusce vel leo ut tortor luctus iaculis eu ut lacus. Aenean in justo et felis cursus consectetur. In hac habitasse platea dictumst. Morbi in efficitur dui. Aliquam erat volutpat. Suspendisse vel bibendum nulla. Nam vitae posuere felis. Praesent sit amet justo vitae odio facilisis bibendum. Nulla facilisi.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience') ">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                    <li><span>UI/UX</span><br>Designing Web Applications</li>
+                    <li><span>Web Development</span><br>Web Application Development</li>
+                    <li><span>Network Device Configuration</span><br>Configuration of Network Devices</li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>March 2021 - April 2021</span><br>Internship at the</li>
+                    <li><span>January 2023 - April 2023</span><br>Huawei Web Technologies Kenya</li>
+                </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2019</span><br>Graduation From Nova Pioneer High School</li>
+                    <li><span>2024</span><br>Bachelor in Business Information Technologies</li>
+                </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-----------------services-->
+<div id="services">
+    <div class="container">
+        <h1>My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-device"></i>
+                <h2>Network Device Configuration</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--------------portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Savify</h3>
+                    <p>This app allows students to get deals to fun activities.</p>
+                    <a href="#"><i class="fas fa-externallink-alt"></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Web development</h3>
+                    <p>In the process of developing web applications.</p>
+                    <a href="#"><i class="fas fa-externallink-alt"></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Device Configuration</h3>
+                    <p>I am able to assist in configuring network devices.</p>
+                    <a href="#"><i class="fas fa-externallink-alt"></a>
+                </div>
+            </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
