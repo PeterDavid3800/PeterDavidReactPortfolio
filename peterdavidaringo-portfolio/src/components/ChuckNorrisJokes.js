@@ -1,5 +1,5 @@
-// ChuckNorrisJokes.js
 import React, { useState, useEffect } from 'react';
+import './style.css';
 
 const ChuckNorrisJokes = () => {
   const [jokes, setJokes] = useState([]);
@@ -20,9 +20,7 @@ const ChuckNorrisJokes = () => {
 
     fetchJokes();
 
-    // Clean up function (optional)
     return () => {
-      // Any cleanup code goes here
     };
   }, []);
 

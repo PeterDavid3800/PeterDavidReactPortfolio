@@ -1,6 +1,4 @@
 # Peter-David-Aringo-Portfolio
-This is a portfolio for Peter David Aringo. Get to know more about him.
-
 Questions
 
 1.) What is NPM?

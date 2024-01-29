@@ -1,5 +1,6 @@
 // Services.js
 import React from 'react';
+import './style.css';
 
 const Services = () => {
   return (

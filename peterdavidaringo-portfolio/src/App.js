@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Landing /> {/* Route for the landing page */}
+            <Landing />
           </Route>
           <Route path="/about">
             <About />
