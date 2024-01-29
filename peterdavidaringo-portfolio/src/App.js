@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
+import Landing from './components/Landing';
 import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
@@ -15,7 +14,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/">
-            <Landing />
+            <Landing /> {/* Route for the landing page */}
           </Route>
           <Route path="/about">
             <About />

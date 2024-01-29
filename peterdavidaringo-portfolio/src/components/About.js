@@ -1,7 +1,11 @@
-// About.js
 import React from 'react';
 
 const About = () => {
+
+  const opentab = (tabName) => {
+    // Implement the logic to open the tab
+  };
+
   return (
     <div id="about">
       <div className="container">
